@@ -4,6 +4,11 @@
 	'use strict';
 	
 	var Pojo_Builder_Animation = {
+		cache: {
+			$document: $( document ),
+			$window: $( window )
+		},
+		
 		cacheElements: function() {
 			this.cache.$body = $( 'body' );
 		},
@@ -14,6 +19,16 @@
 
 		bindEvents: function() {
 			var self = this;
+
+			$( '.pb-animation-running' ).waypoint( function() {
+					$( this )
+						.show()
+						.addClass( 'animated ' + $( this ).data( 'animation_type' ) );
+				},
+				{
+					offset: '80%'
+				}
+			);
 		},
 
 		init: function() {

@@ -14,7 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 define( 'POJO_BUILDER_ANIMATION__FILE__', __FILE__ );
 define( 'POJO_BUILDER_ANIMATION_BASE', plugin_basename( POJO_BUILDER_ANIMATION__FILE__ ) );
-
+define( 'POJO_BUILDER_ANIMATION_URL', plugins_url( '/', POJO_BUILDER_ANIMATION__FILE__ ) );
+define( 'POJO_BUILDER_ANIMATION_ASSETS_URL', POJO_BUILDER_ANIMATION_URL . 'assets/' );
 
 final class Pojo_Builder_Animation {
 	
@@ -23,6 +24,9 @@ final class Pojo_Builder_Animation {
 	 * @since 1.0.0
 	 */
 	private static $_instance = null;
+
+	/** @var Pojo_Builder_Animation_Scripts */
+	public $scripts;
 	
 	public function load_textdomain() {
 		load_plugin_textdomain( 'pb-animation', false, basename( dirname( __FILE__ ) ) . '/languages' );
@@ -63,8 +67,19 @@ final class Pojo_Builder_Animation {
 		
 		return self::$_instance;
 	}
+
+	public function bootstrap() {
+		// This plugin for Pojo Themes..
+		if ( ! class_exists( 'Pojo_Core' ) )
+			return;
+		
+		include( 'classes/class-pojo-builder-animation-scripts.php' );
+		
+		$this->scripts = new Pojo_Builder_Animation_Scripts();
+	}
 	
 	private function __construct() {
+		add_action( 'init', array( &$this, 'bootstrap' ) );
 		add_action( 'plugins_loaded', array( &$this, 'load_textdomain' ) );
 	}
 	
