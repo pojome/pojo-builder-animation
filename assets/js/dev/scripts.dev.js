@@ -11,18 +11,17 @@
 		
 		cacheElements: function() {
 			this.cache.$body = $( 'body' );
+			this.cache.$animationRunning = $( '.pb-animation-running' );
 		},
 
-		buildElements: function() {
-			
-		},
+		buildElements: function() {},
 
 		bindEvents: function() {
 			var self = this;
 
-			$( '.pb-animation-running' ).waypoint( function() {
+			self.cache.$animationRunning.waypoint( function() {
 					$( this )
-						.show()
+						.css( 'visibility', 'visible' )
 						.addClass( 'animated ' + $( this ).data( 'animation_type' ) );
 				},
 				{

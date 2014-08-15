@@ -83,6 +83,64 @@ module.exports = function( grunt ) {
 			}
 		},
 
+		less: {
+			dist: {
+				options: {
+					cleancss: true
+				},
+				files: {
+					'assets/css/styles.css': 'assets/less/styles.less'
+				}
+			}
+		},
+
+		jshint: {
+			options: {
+				jshintrc: '.jshintrc'
+			},
+			all: [
+				'Gruntfile.js',
+				'assets/js/dev/scripts.dev.js'
+			]
+		},
+
+		uglify: {
+			pkg: grunt.file.readJSON( 'package.json' ),
+			options: {},
+			dist: {
+				files: {
+					'assets/js/scripts.min.js': [
+						'assets/js/dev/scripts.dev.js'
+					]
+				}
+			}
+		},
+
+		watch: {
+			js: {
+				files: [
+					'**/*.js',
+					'!**/*.min.js'
+				],
+				tasks: [
+					'jshint',
+					'uglify'
+				],
+				options: {}
+			},
+
+			less: {
+
+				files: [
+					'**/*.less'
+				],
+				tasks: [
+					'less'
+				],
+				options: {}
+			}
+		},
+
 		bumpup: {
 			options: {
 				updateProps: {
@@ -130,7 +188,9 @@ module.exports = function( grunt ) {
 	// Default task(s).
 	grunt.registerTask( 'default', [
 		'checktextdomain',
-		'pot'
+		'pot',
+		'less',
+		'uglify'
 	] );
 
 	grunt.registerTask( 'publish', [

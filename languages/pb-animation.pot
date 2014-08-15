@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pojo-builder-animation 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-14 16:25+0300\n"
+"POT-Creation-Date: 2014-08-15 11:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: pojo-builder-animation.php:42 pojo-builder-animation.php:53
+#: classes/class-pojo-builder-animation-actions.php:40
+msgid "Animation"
+msgstr ""
+
+#: classes/class-pojo-builder-animation-actions.php:42
+msgid "None"
+msgstr ""
+
+#: pojo-builder-animation.php:49 pojo-builder-animation.php:60
 msgid "Cheatin&#8217; huh?"
 msgstr ""

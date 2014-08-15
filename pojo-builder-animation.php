@@ -24,10 +24,13 @@ final class Pojo_Builder_Animation {
 	 * @since 1.0.0
 	 */
 	private static $_instance = null;
-
+	
+	/** @var Pojo_Builder_Animation_Actions */
+	public $actions;
+	
 	/** @var Pojo_Builder_Animation_Scripts */
 	public $scripts;
-	
+
 	public function load_textdomain() {
 		load_plugin_textdomain( 'pb-animation', false, basename( dirname( __FILE__ ) ) . '/languages' );
 	}
@@ -70,11 +73,14 @@ final class Pojo_Builder_Animation {
 
 	public function bootstrap() {
 		// This plugin for Pojo Themes..
+		// TODO: Add notice for non-pojo theme
 		if ( ! class_exists( 'Pojo_Core' ) )
 			return;
 		
+		include( 'classes/class-pojo-builder-animation-actions.php' );
 		include( 'classes/class-pojo-builder-animation-scripts.php' );
 		
+		$this->actions = new Pojo_Builder_Animation_Actions();
 		$this->scripts = new Pojo_Builder_Animation_Scripts();
 	}
 	
