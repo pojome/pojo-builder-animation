@@ -11,6 +11,9 @@ module.exports = function( grunt ) {
 	grunt.initConfig( {
 		pkg: grunt.file.readJSON( 'package.json' ),
 
+		banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+			'<%= grunt.template.today("dd-mm-yyyy") %> */',
+		
 		checktextdomain: {
 			standard: {
 				options:{
@@ -80,6 +83,20 @@ module.exports = function( grunt ) {
 					'!*~'
 				],
 				expand: true
+			}
+		},
+
+		usebanner: {
+			dist: {
+				options: {
+					banner: '<%= banner %>'
+				},
+				files: {
+					src: [
+						'assets/css/styles.css',
+						'assets/js/scripts.min.js'
+					]
+				}
 			}
 		},
 
@@ -190,7 +207,8 @@ module.exports = function( grunt ) {
 		'checktextdomain',
 		'pot',
 		'less',
-		'uglify'
+		'uglify',
+		'usebanner'
 	] );
 
 	grunt.registerTask( 'publish', [
