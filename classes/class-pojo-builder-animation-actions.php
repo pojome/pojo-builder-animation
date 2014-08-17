@@ -9,15 +9,19 @@ final class Pojo_Builder_Animation_Actions {
 
 	public function get_animations() {
 		if ( is_null( $this->_animations ) ) {
-			// TODO: Waiting for @Yoni animation list.
 			$this->_animations = apply_filters(
 				'pb_animation_animations_list',
 				array(
-					'bounce',
-					'tada',
-					'fadeIn',
-					'fadeInLeft',
-					'fadeInRight',
+					// class => title
+					'fadeIn' => __( 'Fade In', 'pb-animation' ),
+					'fadeInDown' => __( 'Fade Down', 'pb-animation' ),
+					'fadeInUp' => __( 'Fade Up', 'pb-animation' ),
+					'fadeInRight' => __( 'Fade Right', 'pb-animation' ),
+					'fadeInLeft' => __( 'Fade Left', 'pb-animation' ),
+					
+					'zoomIn' => __( 'Zoom In', 'pb-animation' ),
+					'bounce' => __( 'Bounce', 'pb-animation' ),
+					'flash' => __( 'Flash', 'pb-animation' ),
 				)
 			);
 		}
@@ -40,8 +44,8 @@ final class Pojo_Builder_Animation_Actions {
 			<label for="<?php echo $widget->get_field_id( $id ); ?>"><?php _e( 'Animation', 'pb-animation' ); ?></label>
 			<select id="<?php echo $widget->get_field_id( $id ); ?>" name="<?php echo $widget->get_field_name( $id ); ?>" class="widefat pb-widget-<?php echo esc_attr( $id ); ?>">
 				<option value=""><?php _e( 'None', 'pb-animation' ); ?></option>
-				<?php foreach ( $this->get_animations() as $animation ) : ?>
-					<option value="<?php echo esc_attr( $animation ); ?>"<?php selected( $value, $animation ); ?>><?php echo $animation; ?></option>
+				<?php foreach ( $this->get_animations() as $animation_class => $animation_title ) : ?>
+					<option value="<?php echo esc_attr( $animation_class ); ?>"<?php selected( $value, $animation_class ); ?>><?php echo $animation_title; ?></option>
 				<?php endforeach; ?>
 			</select>
 		</p>
