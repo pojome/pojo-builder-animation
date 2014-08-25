@@ -19,15 +19,17 @@
 		bindEvents: function() {
 			var self = this;
 
-			self.cache.$animationRunning.waypoint( function() {
-					$( this )
-						.css( 'visibility', 'visible' )
-						.addClass( 'animated ' + $( this ).data( 'animation_type' ) );
-				},
-				{
-					offset: '80%'
-				}
-			);
+			self.cache.$body.imagesLoaded().always( function( instance ) {
+				self.cache.$animationRunning.waypoint( function() {
+						$( this )
+							.css( 'visibility', 'visible' )
+							.addClass( 'animated ' + $( this ).data( 'animation_type' ) );
+					},
+					{
+						offset: '80%'
+					}
+				);
+			} );
 		},
 
 		init: function() {
