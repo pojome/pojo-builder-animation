@@ -12,7 +12,7 @@ The Builder Animation plugin makes it possible to animate element by setting som
 
 Please Note: This plugin is only for [Pojo Framework](http://pojo.me/?utm_source=wp-repo&utm_medium=link&utm_campaign=builder-animation) users - Pojo is a premium themes.
 
-**Animations**
+<strong>Animations:</strong><br />
 * Fade In
 * Fade Down
 * Fade Up
