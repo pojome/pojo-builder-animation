@@ -1,6 +1,6 @@
 === Pojo Builder Animation ===
 Contributors: pojo.me, KingYes, ariel.k
-Tags: Pojo, Animation, Builder, Widget,
+Tags: pojo, animation, builder, widget
 Requires at least: 3.9
 Tested up to: 3.9
 Stable tag: 1.0.0
