@@ -198,6 +198,47 @@ module.exports = function( grunt ) {
 				commitMessage: 'released v<%= version %>',
 				tagMessage: 'Tagged as v<%= version %>'
 			}
+		},
+
+		copy: {
+			main: {
+				src: [
+					'**',
+					'!node_modules/**',
+					'!build/**',
+					'!bin/**',
+					'!.git/**',
+					'!tests/**',
+					'!.travis.yml',
+					'!.jshintrc',
+					'!README.md',
+					'!phpunit.xml',
+					'!vendor/**',
+					'!Gruntfile.js',
+					'!package.json',
+					'!.gitignore',
+					'!.gitmodules',
+					'!*~'
+				],
+				dest: 'build/'
+			}
+		},
+
+		clean: {
+			//Clean up build folder
+			main: [
+				'build'
+			]
+		},
+		
+		wp_deploy: {
+			deploy:{
+				options: {
+					plugin_slug: '<%= pkg.slug %>',
+					svn_user: 'KingYes',
+					build_dir: 'build/'
+				}
+			}
 		}
 		
 	} );
