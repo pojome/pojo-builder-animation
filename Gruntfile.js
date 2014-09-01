@@ -1,5 +1,5 @@
 /**
- * WP-Linker Makefile
+ * Pojo Builder Animation Makefile
  */
 'use strict';
 
