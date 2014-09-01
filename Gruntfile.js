@@ -200,6 +200,17 @@ module.exports = function( grunt ) {
 			}
 		},
 
+		wp_readme_to_markdown: {
+			github: {
+				options: {
+					gruntDependencyStatusUrl: 'https://david-dm.org/pojome/pojo-builder-animation'
+				},
+				files: {
+					'README.md': 'readme.txt'
+				}
+			}
+		},
+
 		copy: {
 			main: {
 				src: [
@@ -249,7 +260,14 @@ module.exports = function( grunt ) {
 		'pot',
 		'less',
 		'uglify',
-		'usebanner'
+		'usebanner',
+		'wp_readme_to_markdown'
+	] );
+
+	grunt.registerTask( 'build', [
+		'default',
+		'clean',
+		'copy'
 	] );
 
 	grunt.registerTask( 'publish', [

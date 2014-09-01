@@ -1,16 +1,18 @@
-=== Pojo Builder Animation ===
-Contributors: pojo.me, KingYes, ariel.k
-Tags: pojo, animation, builder, widget
-Requires at least: 3.9
-Tested up to: 4.0.0
-Stable tag: 1.0.0
-License: GPLv2 or later
+# Pojo Builder Animation #
+[![Dependency Status](https://david-dm.org/pojome/pojo-builder-animation/dev-status.svg)](https://david-dm.org/pojome/pojo-builder-animation#info=devDependencies) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+**Contributors:** pojo.me, KingYes, ariel.k  
+**Tags:** pojo, animation, builder, widget  
+**Requires at least:** 3.9  
+**Tested up to:** 4.0.0  
+**Stable tag:** 1.0.0  
+**License:** GPLv2 or later  
 
 The Builder Animation plugin makes it possible to animate element by setting some animation in widget's builder with Pojo Framework.
 
-== Description ==
+## Description ##
 
-Please Note: This plugin is only for [Pojo Framework](http://pojo.me/?utm_source=wp-repo&utm_medium=link&utm_campaign=builder-animation) users - Pojo is a premium themes.
+**Please Note:** This plugin is only for [Pojo Framework](http://pojo.me/?utm_source=wp-repo&utm_medium=link&utm_campaign=builder-animation) users - Pojo is a premium themes.  
 
 <strong>Animations:</strong><br />
 * Fade In
@@ -26,7 +28,7 @@ Please Note: This plugin is only for [Pojo Framework](http://pojo.me/?utm_source
 
 Would you like to like to contribute to Builder Animation? You are more than welcome to submit your pull requests on the [GitHub repo](https://github.com/pojome/pojo-builder-animation). Also, if you have any notes about the code, please open a ticket on ths issue tracker.
 
-== Installation ==
+## Installation ##
 
 1. Upload plugin files to your plugins folder or install using WordPress built-in Add New Plugin installer
 1. Activate the plugin
@@ -34,8 +36,8 @@ Would you like to like to contribute to Builder Animation? You are more than wel
 1. Drag and drop any widget
 1. Now you can choose any animation in Setting button
 
-== Changelog ==
+## Changelog ##
 
-= 1.0.0 =
+### 1.0.0 ###
 * Initial Public Release!
 
