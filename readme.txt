@@ -12,7 +12,8 @@ The Builder Animation plugin makes it possible to animate element by setting som
 
 Please Note: This plugin is only for [Pojo Framework](http://pojo.me/?utm_source=wp-repo&utm_medium=link&utm_campaign=builder-animation) users - Pojo is a premium themes.
 
-<strong>Animations:</strong><br />
+<strong>Animations:</strong>
+
 * Fade In
 * Fade Down
 * Fade Up
@@ -34,8 +35,11 @@ Would you like to like to contribute to Builder Animation? You are more than wel
 1. Drag and drop any widget
 1. Now you can choose any animation in Setting button
 
+== Screenshots ==
+
+1. Widget Animation
+
 == Changelog ==
 
 = 1.0.0 =
 * Initial Public Release!
-
