@@ -23,6 +23,8 @@ Please Note: This plugin is only for [Pojo Framework](http://pojo.me/?utm_source
 * Bounce
 * Flash
 
+[youtube https://www.youtube.com/watch?v=bQ2ppcjgTg8]
+
 <strong>Contributions:</strong><br />
 
 Would you like to like to contribute to Builder Animation? You are more than welcome to submit your pull requests on the [GitHub repo](https://github.com/pojome/pojo-builder-animation). Also, if you have any notes about the code, please open a ticket on ths issue tracker.
