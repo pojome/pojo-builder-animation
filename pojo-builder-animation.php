@@ -91,4 +91,4 @@ final class Pojo_Builder_Animation {
 }
 
 Pojo_Builder_Animation::instance();
-// EOF/ EOF
+// EOF
