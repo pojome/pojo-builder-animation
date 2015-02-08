@@ -2,7 +2,7 @@
 Contributors: pojo.me, KingYes, ariel.k
 Tags: pojo, animation, builder, widget
 Requires at least: 3.9
-Tested up to: 4.0.0
+Tested up to: 4.1
 Stable tag: 1.0.0
 License: GPLv2 or later
 
@@ -23,7 +23,7 @@ Please Note: This plugin is only for [Pojo Framework](http://pojo.me/?utm_source
 * Bounce
 * Flash
 
-[youtube https://www.youtube.com/watch?v=bQ2ppcjgTg8]
+[youtube https://www.youtube.com/watch?v=fGBXvJ9uznE]
 
 <strong>Contributions:</strong><br />
 
@@ -42,6 +42,9 @@ Would you like to like to contribute to Builder Animation? You are more than wel
 1. Widget Animation
 
 == Changelog ==
+
+= 1.0.1 =
+* Tested up to WordPress v4.1
 
 = 1.0.0 =
 * Initial Public Release!
