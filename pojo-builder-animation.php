@@ -5,7 +5,7 @@ Plugin URI: http://pojo.me/
 Description: The Builder Animation plugin makes it possible to animate element by setting some animation in widget's builder with Pojo Framework.
 Author: Pojo Team
 Author URI: http://pojo.me/
-Version: 1.0.0
+Version: 1.0.1
 Text Domain: pb-animation
 Domain Path: /languages/
 */
