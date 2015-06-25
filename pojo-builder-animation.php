@@ -60,7 +60,7 @@ final class Pojo_Builder_Animation {
 		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'pb-animation' ), '1.0.0' );
 	}
 	
-	/**cd 
+	/**
 	 * @return Pojo_Builder_Animation
 	 */
 	public static function instance() {
