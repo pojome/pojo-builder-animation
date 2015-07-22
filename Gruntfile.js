@@ -231,6 +231,7 @@ module.exports = function( grunt ) {
 					'!.gitmodules',
 					'!*~'
 				],
+				expand: true,
 				dest: 'build/'
 			}
 		},
