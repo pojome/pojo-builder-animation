@@ -47,6 +47,10 @@ Would you like to like to contribute to Builder Animation? You are more than wel
 
 ## Changelog ##
 
+### 1.0.2 ###
+* Fixed! - HTML5 Fullscreen in chrome browser
+* Tweak! - Update animate.css script
+
 ### 1.0.1 ###
 * Tested up to WordPress v4.1
 
