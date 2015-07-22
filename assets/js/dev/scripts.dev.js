@@ -21,9 +21,20 @@
 
 			self.cache.$body.imagesLoaded().always( function( instance ) {
 				self.cache.$animationRunning.waypoint( function() {
-						$( this )
+						var $thisEl = $( this );
+						
+						if ( $thisEl.hasClass( 'animated' ) ) {
+							return;
+						}
+						
+						$thisEl
 							.css( 'visibility', 'visible' )
-							.addClass( 'animated ' + $( this ).data( 'animation_type' ) );
+							.addClass( 'animated ' + $thisEl.data( 'animation_type' ) );
+						
+						// Tweak for HTML5 Fullscreen in chrome browser
+						setTimeout( function() {
+							$thisEl.removeClass( $thisEl.data( 'animation_type' ) );
+						}, 5000 );
 					},
 					{
 						offset: '80%'
