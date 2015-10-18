@@ -4,7 +4,7 @@
 **Contributors:** pojo.me, KingYes, ariel.k  
 **Tags:** pojo, animation, builder, widget  
 **Requires at least:** 3.9  
-**Tested up to:** 4.2  
+**Tested up to:** 4.3.1  
 **Stable tag:** 1.0.2  
 **License:** GPLv2 or later  
 
@@ -46,6 +46,10 @@ Would you like to like to contribute to Builder Animation? You are more than wel
 
 
 ## Changelog ##
+
+### 1.0.3 ###
+* Tweak! - Update animate.css script
+* Tested up to WordPress v4.3.1
 
 ### 1.0.2 ###
 * Fixed! - HTML5 Fullscreen in chrome browser
