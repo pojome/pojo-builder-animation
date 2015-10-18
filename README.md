@@ -5,7 +5,7 @@
 **Tags:** pojo, animation, builder, widget  
 **Requires at least:** 3.9  
 **Tested up to:** 4.3.1  
-**Stable tag:** 1.0.2  
+**Stable tag:** 1.0.3  
 **License:** GPLv2 or later  
 
 The Builder Animation plugin makes it possible to animate element by setting some animation in widget's builder with Pojo Framework.
