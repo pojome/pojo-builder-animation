@@ -1,11 +1,11 @@
 # Pojo Builder Animation #
 [![Dependency Status](https://david-dm.org/pojome/pojo-builder-animation/dev-status.svg)](https://david-dm.org/pojome/pojo-builder-animation#info=devDependencies) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-**Contributors:** pojo.me, KingYes, ariel.k  
+**Contributors:** pojo.me, KingYes, ariel.k, ramiy  
 **Tags:** pojo, animation, builder, widget  
 **Requires at least:** 3.9  
-**Tested up to:** 4.3.1  
-**Stable tag:** 1.0.3  
+**Tested up to:** 4.5  
+**Stable tag:** 1.0.4  
 **License:** GPLv2 or later  
 
 The Builder Animation plugin makes it possible to animate element by setting some animation in widget's builder with Pojo Framework.
@@ -14,7 +14,7 @@ The Builder Animation plugin makes it possible to animate element by setting som
 
 **Please Note:** This plugin is only for [Pojo Framework](http://pojo.me/?utm_source=wp-repo&utm_medium=link&utm_campaign=builder-animation) users - Pojo is a premium themes.  
 
-<strong>Animations:</strong>
+### Animations ###
 
 * Fade In
 * Fade Down
@@ -25,11 +25,11 @@ The Builder Animation plugin makes it possible to animate element by setting som
 * Bounce
 * Flash
 
-[youtube https://www.youtube.com/watch?v=fGBXvJ9uznE]
+https://www.youtube.com/watch?v=fGBXvJ9uznE
 
-<strong>Contributions:</strong><br />
+### Contributions ###
 
-Would you like to like to contribute to Builder Animation? You are more than welcome to submit your pull requests on the [GitHub repo](https://github.com/pojome/pojo-builder-animation). Also, if you have any notes about the code, please open a ticket on ths issue tracker.
+Would you like to like to contribute to Builder Animation? You are more than welcome to submit your pull requests to our [GitHub repo](https://github.com/pojome/pojo-builder-animation). Also, if you have any notes about the code, please open a ticket on this issue tracker.
 
 ## Installation ##
 
@@ -44,19 +44,24 @@ Would you like to like to contribute to Builder Animation? You are more than wel
 ### 1. Widget Animation ###
 ![Widget Animation](http://s.wordpress.org/extend/plugins/pojo-builder-animation/screenshot-1.png)
 
-
 ## Changelog ##
+
+### 1.0.4 ###
+* Prevent direct access to directories
+* Remove po/mo files from the plugin
+* Use [translate.wordpress.org](https://translate.wordpress.org/) to translate the plugin
+* Tested up to WordPress 4.5
 
 ### 1.0.3 ###
 * Tweak! - Update animate.css script
-* Tested up to WordPress v4.3.1
+* Tested up to WordPress 4.3
 
 ### 1.0.2 ###
 * Fixed! - HTML5 Fullscreen in chrome browser
 * Tweak! - Update animate.css script
 
 ### 1.0.1 ###
-* Tested up to WordPress v4.1
+* Tested up to WordPress 4.1
 
 ### 1.0.0 ###
 * Initial Public Release!

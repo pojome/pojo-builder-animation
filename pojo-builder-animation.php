@@ -1,13 +1,12 @@
 <?php
 /*
 Plugin Name: Pojo Builder Animation
-Plugin URI: http://pojo.me/
+Plugin URI:  https://wordpress.org/plugins/pojo-builder-animation/
+Version:     1.0.4
 Description: The Builder Animation plugin makes it possible to animate element by setting some animation in widget's builder with Pojo Framework.
-Author: Pojo Team
-Author URI: http://pojo.me/
-Version: 1.0.3
+Author:      Pojo Team
+Author URI:  http://pojo.me/
 Text Domain: pb-animation
-Domain Path: /languages/
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -30,10 +29,6 @@ final class Pojo_Builder_Animation {
 	
 	/** @var Pojo_Builder_Animation_Scripts */
 	public $scripts;
-
-	public function load_textdomain() {
-		load_plugin_textdomain( 'pb-animation', false, basename( dirname( __FILE__ ) ) . '/languages' );
-	}
 	
 	/**
 	 * Throw error on object clone
@@ -69,7 +64,17 @@ final class Pojo_Builder_Animation {
 		
 		return self::$_instance;
 	}
-
+	
+	/**
+	 * Load plugin text domain
+	 *
+	 * @since 1.0.4
+	 * @return void
+	 */
+	public function load_textdomain() {
+		load_plugin_textdomain( 'pb-animation' );
+	}
+	
 	public function bootstrap() {
 		// This plugin for Pojo Themes..
 		// TODO: Add notice for non-pojo theme
