@@ -2,7 +2,7 @@
 Contributors: pojo.me, KingYes, ariel.k
 Tags: pojo, animation, builder, widget
 Requires at least: 3.9
-Tested up to: 5.7
+Tested up to: 5.8
 Stable tag: 1.0.3
 License: GPLv2 or later
 
